@@ -65,9 +65,8 @@ ul { list-style: none; }
 .logo-img {
   height: 46px;
   width: auto;
-  /* 白文字ロゴをヘッダー（明るい背景）で見せる:
-     multiply合成で白が透明になり、赤星がそのまま残る */
-  mix-blend-mode: multiply;
+  /* 白文字→黒・赤星→赤を保ちつつ明るい背景で見えるようにする */
+  filter: invert(1) hue-rotate(180deg);
   transition: opacity var(--transition);
 }
 .logo-img:hover { opacity: 0.75; }
