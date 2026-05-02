@@ -30,6 +30,7 @@ const galleryImages = [
   { src: 'images/IMG_9600-scaled.jpg', alt: '塩からあげランチ' },
   { src: 'images/IMG_9605-scaled.jpg', alt: 'ベーコンとキノコのクリームリゾット' },
   { src: 'images/IMG_9607-scaled.jpg', alt: '季節野菜のサラダ' },
+  { src: 'images/Recommended_set-scaled.jpg', alt: 'おすすめセット（フルコース）' },
   { src: 'images/IMG_9610-scaled.jpg', alt: 'いちごパフェ' },
   { src: 'images/IMG_9613-scaled.jpg', alt: 'フルーツワッフル' },
   { src: 'images/IMG_9616-scaled.jpg', alt: '手作りケーキ' },
