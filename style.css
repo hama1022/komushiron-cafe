@@ -360,11 +360,6 @@ ul { list-style: none; }
   object-fit: cover;
   display: block;
 }
-/* おすすめセット：複数料理を含む縦長写真のため高さを拡張して全体表示 */
-.menu-card.full-spread .menu-img {
-  height: 340px;
-  object-position: center top;
-}
 .menu-badge-label {
   position: absolute;
   top: 12px; left: 12px;
