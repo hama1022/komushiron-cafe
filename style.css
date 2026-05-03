@@ -158,12 +158,30 @@ ul { list-style: none; }
   opacity: 0.85;
   margin-bottom: 2rem;
 }
+.hero-h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: inherit;
+  font-size: inherit;
+}
 .hero-logo-img {
   width: min(420px, 78vw);
   height: auto;
   margin: 0 auto 1.8rem;
   display: block;
   filter: drop-shadow(0 4px 24px rgba(0,0,0,0.55));
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 .hero-tagline {
   font-family: var(--font-serif-jp);
