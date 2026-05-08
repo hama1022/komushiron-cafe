@@ -28,19 +28,22 @@
     outSlide.style.opacity = '1';
     inSlide.style.opacity = '0';
 
-    // フェードアウト（fill なし → onfinish でインライン確定）
-    const outAnim = outSlide.animate(
+    // フェードアウト（fill:forwards でスナップバック防止）
+    outSlide.animate(
       [{ opacity: 1 }, { opacity: 0 }],
-      { duration: DURATION, easing: 'ease-in-out' }
+      { duration: DURATION, easing: 'ease-in-out', fill: 'forwards' }
     );
-    outAnim.onfinish = () => { outSlide.style.opacity = '0'; };
 
-    // フェードイン（fill なし → onfinish でインライン確定）
+    // フェードイン（fill:forwards でスナップバック防止）
+    // onfinish でインラインスタイルにも確定し次サイクルのベース値とする
     const inAnim = inSlide.animate(
       [{ opacity: 0 }, { opacity: 1 }],
-      { duration: DURATION, easing: 'ease-in-out' }
+      { duration: DURATION, easing: 'ease-in-out', fill: 'forwards' }
     );
-    inAnim.onfinish = () => { inSlide.style.opacity = '1'; };
+    inAnim.onfinish = () => {
+      outSlide.style.opacity = '0';
+      inSlide.style.opacity  = '1';
+    };
   }
 
   setInterval(advance, INTERVAL);
