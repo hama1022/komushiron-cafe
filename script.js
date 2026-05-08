@@ -1,24 +1,49 @@
-// ===== Hero Slideshow =====
+// ===== Hero Slideshow (WAAPI) =====
 (function () {
   const slides = document.querySelectorAll('.hero-slide');
   if (!slides.length) return;
   let current = 0;
+  const INTERVAL = 5000;  // 表示時間 ms
+  const DURATION = 1500;  // フェード時間 ms
 
-  // Preload next image before switching
+  // 初期設定：最初のスライドだけ見せる
+  slides.forEach((s, i) => { s.style.opacity = i === 0 ? '1' : '0'; });
+
+  // 次の画像を先読み
   function preload(index) {
-    const next = slides[(index + 1) % slides.length];
-    const bg = next.style.backgroundImage.replace(/url\(["']?|["']?\)/g, '');
+    const bg = slides[index].style.backgroundImage.replace(/url\(["'"]?|["']?\)/g, '');
     if (bg) { const img = new Image(); img.src = bg; }
   }
+  for (let i = 1; i < slides.length; i++) preload(i);
 
-  preload(0);
-
-  setInterval(() => {
-    slides[current].classList.remove('active');
+  // クロスフェード切替
+  function advance() {
+    const outSlide = slides[current];
     current = (current + 1) % slides.length;
-    slides[current].classList.add('active');
-    preload(current);
-  }, 5000); // 5秒ごとに切替
+    const inSlide = slides[current];
+
+    // 前回のアニメーションをキャンセルしてインラインスタイルをリセット
+    outSlide.getAnimations().forEach(a => a.cancel());
+    inSlide.getAnimations().forEach(a => a.cancel());
+    outSlide.style.opacity = '1';
+    inSlide.style.opacity = '0';
+
+    // フェードアウト（fill なし → onfinish でインライン確定）
+    const outAnim = outSlide.animate(
+      [{ opacity: 1 }, { opacity: 0 }],
+      { duration: DURATION, easing: 'ease-in-out' }
+    );
+    outAnim.onfinish = () => { outSlide.style.opacity = '0'; };
+
+    // フェードイン（fill なし → onfinish でインライン確定）
+    const inAnim = inSlide.animate(
+      [{ opacity: 0 }, { opacity: 1 }],
+      { duration: DURATION, easing: 'ease-in-out' }
+    );
+    inAnim.onfinish = () => { inSlide.style.opacity = '1'; };
+  }
+
+  setInterval(advance, INTERVAL);
 })();
 
 // Header scroll effect
