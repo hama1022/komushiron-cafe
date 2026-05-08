@@ -121,9 +121,23 @@ ul { list-style: none; }
   justify-content: center;
   text-align: center;
   overflow: hidden;
+  background-color: #3B1F0E;
+}
+/* Slideshow layers */
+.hero-slides {
+  position: absolute;
+  inset: 0;
+}
+.hero-slide {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center;
-  background-color: #3B1F0E;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+.hero-slide.active {
+  opacity: 1;
 }
 .hero-overlay {
   position: absolute;

@@ -1,3 +1,26 @@
+// ===== Hero Slideshow =====
+(function () {
+  const slides = document.querySelectorAll('.hero-slide');
+  if (!slides.length) return;
+  let current = 0;
+
+  // Preload next image before switching
+  function preload(index) {
+    const next = slides[(index + 1) % slides.length];
+    const bg = next.style.backgroundImage.replace(/url\(["']?|["']?\)/g, '');
+    if (bg) { const img = new Image(); img.src = bg; }
+  }
+
+  preload(0);
+
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+    preload(current);
+  }, 5000); // 5秒ごとに切替
+})();
+
 // Header scroll effect
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
