@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@300;400;500&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260508" />
+  <link rel="stylesheet" href="style.css?v=20260512" />
 
   <!-- ===== LCP最適化: Heroロゴをpreload ===== -->
   <link rel="preload" as="image" href="images/logo.png" fetchpriority="high" />
@@ -608,6 +608,124 @@
     </div>
   </section>
 
+  <!-- ========== TAKEOUT MENU ========== -->
+  <section id="takeout" class="section takeout-section">
+    <div class="container">
+      <div class="section-label">TAKEOUT</div>
+      <h2 class="section-title" data-i18n="takeout.title">テイクアウトメニュー</h2>
+      <p class="section-desc" data-i18n="takeout.desc">お電話でご注文いただけます。TEL 0964-46-3665</p>
+
+      <div class="takeout-grid">
+
+        <!-- 左列：RICE・SNACK / PIZZA / SWEETS -->
+        <div class="takeout-col">
+
+          <div class="to-group">
+            <div class="to-group-head">RICE · SNACK</div>
+            <ul class="to-list">
+              <li>
+                <span class="to-name" data-i18n="to.rice.chicken">チキン南蛮プレート</span>
+                <span class="to-price">¥1,300</span>
+              </li>
+              <li>
+                <span class="to-name" data-i18n="to.rice.turkey">トルコライス</span>
+                <span class="to-price">¥1,300</span>
+              </li>
+              <li class="to-has-note">
+                <div class="to-item-row">
+                  <span class="to-name" data-i18n="to.rice.karaage">塩からあげプレート</span>
+                  <span class="to-price">¥1,200</span>
+                </div>
+                <span class="to-sub" data-i18n="to.rice.karaage.note">全てサラダ付　ごはん大盛 +¥150</span>
+              </li>
+              <li class="to-has-note">
+                <div class="to-item-row">
+                  <span class="to-name" data-i18n="to.snack.set">おつまみセット</span>
+                  <span class="to-price">¥1,300</span>
+                </div>
+                <span class="to-sub" data-i18n="to.snack.set.items">なんこつ唐揚げ・粗びきソーセージ・トリュフ香るポテトフライ</span>
+              </li>
+              <li>
+                <span class="to-name" data-i18n="to.snack.potato">ポテトフライ トリュフ味</span>
+                <span class="to-price">¥500</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="to-group">
+            <div class="to-group-head">PIZZA</div>
+            <ul class="to-list">
+              <li><span class="to-name" data-i18n="to.pizza.margherita">マルゲリータ</span></li>
+              <li><span class="to-name" data-i18n="to.pizza.mix">ピザミックス</span></li>
+              <li><span class="to-name" data-i18n="to.pizza.tuna">ツナコーンマヨピザ</span></li>
+              <li><span class="to-name" data-i18n="to.pizza.quattro">クワトロフォルマッジ</span></li>
+              <li class="to-price-group">
+                <span class="to-each" data-i18n="to.pizza.price">各 ¥1,400</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="to-group">
+            <div class="to-group-head">SWEETS</div>
+            <ul class="to-list">
+              <li>
+                <span class="to-name" data-i18n="to.sweets.cake">ケーキ各種</span>
+                <span class="to-price">¥500</span>
+              </li>
+              <li>
+                <span class="to-name" data-i18n="to.sweets.caramel">キャラメルパウンド</span>
+                <span class="to-price">¥1,300</span>
+              </li>
+              <li>
+                <span class="to-name" data-i18n="to.sweets.fruit">フルーツパウンド</span>
+                <span class="to-price">¥1,300</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- 右列：PASTA -->
+        <div class="takeout-col">
+
+          <div class="to-group">
+            <div class="to-group-head">PASTA</div>
+            <ul class="to-list">
+              <li><span class="to-name" data-i18n="to.pasta.nasu-komushiron">茄子入りコムシロンパスタ</span></li>
+              <li><span class="to-name" data-i18n="to.pasta.tarako-mayo">たらこ炙りマヨパスタ</span></li>
+              <li><span class="to-name" data-i18n="to.pasta.tarako-cream">タラコクリームパスタ</span></li>
+              <li class="to-price-group">
+                <span class="to-each" data-i18n="to.pasta.price1">各 ¥1,100</span>
+              </li>
+              <li class="to-divider"></li>
+              <li><span class="to-name" data-i18n="to.pasta.arabbiata">激辛アラビアータ</span></li>
+              <li><span class="to-name" data-i18n="to.pasta.meat">ナス入りミートソース</span></li>
+              <li><span class="to-name" data-i18n="to.pasta.nasu-bacon">ナスとベーコンのトマトパスタ</span></li>
+              <li><span class="to-name" data-i18n="to.pasta.ebi-kaibashira">エビと貝柱のペペロンチーノ</span></li>
+              <li><span class="to-name" data-i18n="to.pasta.kinoko-bacon">キノコとベーコンのペペロンチーノ</span></li>
+              <li><span class="to-name" data-i18n="to.pasta.spinach">ほうれん草とベーコンのクリームパスタ</span></li>
+              <li class="to-price-group">
+                <span class="to-each" data-i18n="to.pasta.price2">各 ¥1,300</span>
+              </li>
+              <li class="to-divider"></li>
+              <li><span class="to-name" data-i18n="to.pasta.horse">馬スジのラグーパスタ</span></li>
+              <li><span class="to-name" data-i18n="to.pasta.ebi-kinoko">エビとキノコのトマトクリームパスタ</span></li>
+              <li class="to-price-group">
+                <span class="to-each" data-i18n="to.pasta.price3">各 ¥1,500</span>
+              </li>
+              <li class="to-option">
+                <span data-i18n="to.pasta.option">ミニサラダ付 +¥300　パスタ大盛 +¥500</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <p class="menu-note" data-i18n="takeout.note">※価格は税込です。お電話にてご注文ください。TEL 0964-46-3665</p>
+    </div>
+  </section>
+
   <!-- ========== VOICE ========== -->
   <section class="section voice">
     <div class="container">
@@ -766,7 +884,7 @@
     </div>
   </footer>
 
-  <script src="i18n.js?v=20260508"></script>
-  <script src="script.js?v=20260508"></script>
+  <script src="i18n.js?v=20260512"></script>
+  <script src="script.js?v=20260512"></script>
 </body>
 </html>
