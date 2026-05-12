@@ -197,12 +197,18 @@
       </button>
       <nav id="mainNav">
         <ul>
-          <li><a href="#concept">CONCEPT</a></li>
-          <li><a href="#menu">MENU</a></li>
-          <li><a href="#gallery">GALLERY</a></li>
-          <li><a href="#access">ACCESS</a></li>
+          <li><a href="#concept" data-i18n="nav.concept">CONCEPT</a></li>
+          <li><a href="#menu" data-i18n="nav.menu">MENU</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">GALLERY</a></li>
+          <li><a href="#access" data-i18n="nav.access">ACCESS</a></li>
         </ul>
       </nav>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="ja">JP</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="zh-TW">繁</button>
+        <button class="lang-btn" data-lang="ko">한</button>
+      </div>
     </div>
   </header>
 
@@ -219,13 +225,13 @@
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-sub">熊本・美里町の小さなイタリアン</p>
+      <p class="hero-sub" data-i18n="hero.sub">熊本・美里町の小さなイタリアン</p>
       <h1 class="hero-h1">
         <img src="images/logo.png" alt="コムシロン☆カフェ｜熊本・美里町のパスタとケーキ専門カフェ" class="hero-logo-img" width="420" height="386" fetchpriority="high" />
         <span class="visually-hidden">コムシロン☆カフェ｜熊本・美里町のパスタとケーキ専門カフェ</span>
       </h1>
-      <p class="hero-tagline">地元の恵みと手仕事が出会う場所</p>
-      <a href="#menu" class="btn-hero">MENU を見る</a>
+      <p class="hero-tagline" data-i18n="hero.tagline">地元の恵みと手仕事が出会う場所</p>
+      <a href="#menu" class="btn-hero" data-i18n="hero.btn">MENU を見る</a>
     </div>
     <div class="hero-scroll">
       <span></span>
@@ -237,26 +243,26 @@
   <section id="concept" class="section concept">
     <div class="container">
       <div class="section-label">CONCEPT</div>
-      <h2 class="section-title">美里の里山から<br />生まれたカフェ</h2>
+      <h2 class="section-title" data-i18n-html="concept.title">美里の里山から<br />生まれたカフェ</h2>
       <div class="concept-body">
         <div class="concept-text">
-          <p>
+          <p data-i18n-html="concept.p1">
             熊本県美里町の地名「小筵（こむしろ）」から名付けられた
             <strong>KOMUSHIRON☆CAFE</strong>。<br />
             地元の産直市場「まほろばの郷」などから届く新鮮な野菜と、
             この土地ならではの食材を使ったパスタや手作りスイーツをご用意しています。
           </p>
-          <p>
+          <p data-i18n-html="concept.p2">
             レンガ風の建物から見える風景を感じながら、
             本格イタリアンをゆっくりとお楽しみください。
             昼も夜も、あなたの特別なひとときに寄り添います。
           </p>
           <div class="concept-badges">
-            <span class="badge">地元産野菜使用</span>
-            <span class="badge">手作りスイーツ</span>
-            <span class="badge">キッズプレート</span>
-            <span class="badge">テラス席あり</span>
-            <span class="badge">PayPay対応</span>
+            <span class="badge" data-i18n="badge.local">地元産野菜使用</span>
+            <span class="badge" data-i18n="badge.sweets">手作りスイーツ</span>
+            <span class="badge" data-i18n="badge.kids">キッズプレート</span>
+            <span class="badge" data-i18n="badge.terrace">テラス席あり</span>
+            <span class="badge" data-i18n="badge.paypay">PayPay対応</span>
           </div>
         </div>
         <div class="concept-image">
@@ -272,8 +278,8 @@
   <section id="menu" class="section menu">
     <div class="container">
       <div class="section-label">MENU</div>
-      <h2 class="section-title">こだわりの一皿</h2>
-      <p class="section-desc">
+      <h2 class="section-title" data-i18n="menu.title">こだわりの一皿</h2>
+      <p class="section-desc" data-i18n="menu.desc">
         「食べるときに一番美味しい状態」へ。細麺を丁寧に茹で上げ、
         素材の味を最大限に引き出したパスタをどうぞ。
       </p>
@@ -283,18 +289,18 @@
         <!-- ── Pasta ── -->
         <div class="menu-category-header">
           <span class="menu-category-en">Pasta</span>
-          <span class="menu-category-jp">パスタ</span>
+          <span class="menu-category-jp" data-i18n="cat.pasta">パスタ</span>
         </div>
 
         <div class="menu-card featured">
           <div class="menu-img-wrap">
             <img src="images/IMG_9564-scaled.jpg" alt="コムシロンパスタ - 豆腐のもろみ漬けと柚子胡椒の看板パスタ ¥1,350" class="menu-img" loading="lazy" decoding="async" />
-            <span class="menu-badge-label">看板メニュー</span>
+            <span class="menu-badge-label" data-i18n="menu.badge.signature">看板メニュー</span>
           </div>
           <div class="menu-info">
-            <h3>コムシロンパスタ</h3>
+            <h3 data-i18n="pasta1.name">コムシロンパスタ</h3>
             <p class="menu-sub">Komushiron Pasta</p>
-            <p class="menu-desc">豆腐のもろみ漬けをソースに仕立てた、ここだけの一皿。柚子胡椒がアクセントとなった、郷土とイタリアンの出会い。</p>
+            <p class="menu-desc" data-i18n="pasta1.desc">豆腐のもろみ漬けをソースに仕立てた、ここだけの一皿。柚子胡椒がアクセントとなった、郷土とイタリアンの出会い。</p>
             <p class="menu-price">¥1,350</p>
           </div>
         </div>
@@ -302,12 +308,12 @@
         <div class="menu-card">
           <div class="menu-img-wrap">
             <img src="images/IMG_9581-scaled.jpg" alt="ナスとベーコンのトマトソースパスタ - 美里町コムシロン☆カフェ人気No.1 ¥1,480" class="menu-img" loading="lazy" decoding="async" />
-            <span class="menu-badge-label popular">人気 No.1</span>
+            <span class="menu-badge-label popular" data-i18n="menu.badge.pop1">人気 No.1</span>
           </div>
           <div class="menu-info">
-            <h3>ナスとベーコンの<br />トマトソース</h3>
+            <h3 data-i18n-html="pasta2.name">ナスとベーコンの<br />トマトソース</h3>
             <p class="menu-sub">Eggplant &amp; Bacon Tomato</p>
-            <p class="menu-desc">地元産の新鮮なナスとベーコンを、濃厚なトマトソースで仕上げた定番人気パスタ。</p>
+            <p class="menu-desc" data-i18n="pasta2.desc">地元産の新鮮なナスとベーコンを、濃厚なトマトソースで仕上げた定番人気パスタ。</p>
             <p class="menu-price">¥1,480</p>
           </div>
         </div>
@@ -315,12 +321,12 @@
         <div class="menu-card">
           <div class="menu-img-wrap">
             <img src="images/IMG_9568-scaled.jpg" alt="エビと貝柱のフレッシュトマトペペロンチーノ - 人気No.2 ¥1,550" class="menu-img" loading="lazy" decoding="async" />
-            <span class="menu-badge-label popular">人気 No.2</span>
+            <span class="menu-badge-label popular" data-i18n="menu.badge.pop2">人気 No.2</span>
           </div>
           <div class="menu-info">
-            <h3>エビと貝柱の<br />フレッシュトマトペペロンチーノ</h3>
+            <h3 data-i18n-html="pasta3.name">エビと貝柱の<br />フレッシュトマトペペロンチーノ</h3>
             <p class="menu-sub">Shrimp &amp; Scallop Peperoncino</p>
-            <p class="menu-desc">プリプリのエビと貝柱に、フレッシュトマトのみずみずしさが絡む爽やかな一品。</p>
+            <p class="menu-desc" data-i18n="pasta3.desc">プリプリのエビと貝柱に、フレッシュトマトのみずみずしさが絡む爽やかな一品。</p>
             <p class="menu-price">¥1,550</p>
           </div>
         </div>
@@ -328,12 +334,12 @@
         <div class="menu-card">
           <div class="menu-img-wrap">
             <img src="images/IMG_9566-scaled.jpg" alt="ほうれん草とベーコンのクリームパスタ - 人気No.3 ¥1,500" class="menu-img" loading="lazy" decoding="async" />
-            <span class="menu-badge-label popular">人気 No.3</span>
+            <span class="menu-badge-label popular" data-i18n="menu.badge.pop3">人気 No.3</span>
           </div>
           <div class="menu-info">
-            <h3>ほうれん草とベーコンの<br />クリームパスタ</h3>
+            <h3 data-i18n-html="pasta4.name">ほうれん草とベーコンの<br />クリームパスタ</h3>
             <p class="menu-sub">Spinach &amp; Bacon Cream</p>
-            <p class="menu-desc">新鮮なほうれん草とベーコンをまろやかなクリームソースで仕上げた、やさしい味わいの一品。</p>
+            <p class="menu-desc" data-i18n="pasta4.desc">新鮮なほうれん草とベーコンをまろやかなクリームソースで仕上げた、やさしい味わいの一品。</p>
             <p class="menu-price">¥1,500</p>
           </div>
         </div>
@@ -341,7 +347,7 @@
         <!-- ── Oneplate Rice ── -->
         <div class="menu-category-header">
           <span class="menu-category-en">Oneplate Rice</span>
-          <span class="menu-category-jp">ワンプレートごはん（ドリンク付）</span>
+          <span class="menu-category-jp" data-i18n="cat.rice">ワンプレートごはん（ドリンク付）</span>
         </div>
 
         <div class="menu-card">
@@ -349,10 +355,10 @@
             <img src="images/IMG_9604-scaled.jpg" alt="チキン南蛮プレート - 自家製タルタルソース ドリンク付 ¥1,600" class="menu-img" loading="lazy" decoding="async" />
           </div>
           <div class="menu-info">
-            <h3>チキン南蛮プレート</h3>
+            <h3 data-i18n="rice1.name">チキン南蛮プレート</h3>
             <p class="menu-sub">Chicken Nanban Plate</p>
-            <p class="menu-desc">自家製タルタルソースをたっぷりかけた本格チキン南蛮。ボリューム満点でオープン当初から不動の人気メニュー。</p>
-            <p class="menu-price">¥1,600（ドリンク付）</p>
+            <p class="menu-desc" data-i18n="rice1.desc">自家製タルタルソースをたっぷりかけた本格チキン南蛮。ボリューム満点でオープン当初から不動の人気メニュー。</p>
+            <p class="menu-price" data-i18n="rice1.price">¥1,600（ドリンク付）</p>
           </div>
         </div>
 
@@ -361,10 +367,10 @@
             <img src="images/IMG_9600-scaled.jpg" alt="塩からあげプレート - 鶏モモ肉のジューシー塩唐揚げ ドリンク付 ¥1,550" class="menu-img" loading="lazy" decoding="async" />
           </div>
           <div class="menu-info">
-            <h3>塩からあげプレート</h3>
+            <h3 data-i18n="rice2.name">塩からあげプレート</h3>
             <p class="menu-sub">Salt-seasoned Fried Chicken</p>
-            <p class="menu-desc">鶏のモモ肉をやさしく揚げたジューシーな塩からあげ。外はカリッと中はジューシーで、テイクアウトにも人気。</p>
-            <p class="menu-price">¥1,550（ドリンク付）</p>
+            <p class="menu-desc" data-i18n="rice2.desc">鶏のモモ肉をやさしく揚げたジューシーな塩からあげ。外はカリッと中はジューシーで、テイクアウトにも人気。</p>
+            <p class="menu-price" data-i18n="rice2.price">¥1,550（ドリンク付）</p>
           </div>
         </div>
 
@@ -373,17 +379,17 @@
             <img src="images/IMG_9598-scaled.jpg" alt="トルコライス - Wチキンカツとカレー風味ミートソース ドリンク付 ¥1,600" class="menu-img" loading="lazy" decoding="async" />
           </div>
           <div class="menu-info">
-            <h3>トルコライス</h3>
+            <h3 data-i18n="rice3.name">トルコライス</h3>
             <p class="menu-sub">Turkish Rice</p>
-            <p class="menu-desc">Wチキンカツとミートソースをライスに合わせたボリューム満点の一皿。カレー風味のミートソースがアクセント。</p>
-            <p class="menu-price">¥1,600（ドリンク付）</p>
+            <p class="menu-desc" data-i18n="rice3.desc">Wチキンカツとミートソースをライスに合わせたボリューム満点の一皿。カレー風味のミートソースがアクセント。</p>
+            <p class="menu-price" data-i18n="rice3.price">¥1,600（ドリンク付）</p>
           </div>
         </div>
 
         <!-- ── Risotto / Set ── -->
         <div class="menu-category-header">
           <span class="menu-category-en">Risotto &amp; Set</span>
-          <span class="menu-category-jp">リゾット・おすすめセット</span>
+          <span class="menu-category-jp" data-i18n="cat.risotto">リゾット・おすすめセット</span>
         </div>
 
         <div class="menu-card">
@@ -391,9 +397,9 @@
             <img src="images/IMG_9605-scaled.jpg" alt="ベーコンとキノコ色々のクリームリゾット - とろりとした口当たり ¥1,500" class="menu-img" loading="lazy" decoding="async" />
           </div>
           <div class="menu-info">
-            <h3>ベーコンとキノコ色々の<br />クリームリゾット</h3>
+            <h3 data-i18n-html="risotto1.name">ベーコンとキノコ色々の<br />クリームリゾット</h3>
             <p class="menu-sub">Bacon &amp; Mushroom Cream Risotto</p>
-            <p class="menu-desc">数種のキノコとベーコンを使ったコクのあるクリームリゾット。とろりとした口当たりが絶品。</p>
+            <p class="menu-desc" data-i18n="risotto1.desc">数種のキノコとベーコンを使ったコクのあるクリームリゾット。とろりとした口当たりが絶品。</p>
             <p class="menu-price">¥1,500</p>
           </div>
         </div>
@@ -403,9 +409,9 @@
             <img src="images/Recommended_set-scaled.jpg" alt="おすすめセット - 生ハムシーザーサラダ・スープ・パスタ・デザート・ドリンクのフルコース ¥2,300" class="menu-img" loading="lazy" decoding="async" />
           </div>
           <div class="menu-info">
-            <h3>おすすめセット</h3>
+            <h3 data-i18n="set1.name">おすすめセット</h3>
             <p class="menu-sub">Recommended Set</p>
-            <p class="menu-desc">生ハムシーザーサラダ・スープ・ガーリックトースト・パスタ（当日のおすすめから選択）・デザート・ドリンクが揃ったフルコース。</p>
+            <p class="menu-desc" data-i18n="set1.desc">生ハムシーザーサラダ・スープ・ガーリックトースト・パスタ（当日のおすすめから選択）・デザート・ドリンクが揃ったフルコース。</p>
             <p class="menu-price">¥2,300</p>
           </div>
         </div>
@@ -413,7 +419,7 @@
         <!-- ── Sweets ── -->
         <div class="menu-category-header">
           <span class="menu-category-en">Sweets</span>
-          <span class="menu-category-jp">スイーツ（13:00以降）</span>
+          <span class="menu-category-jp" data-i18n="cat.sweets">スイーツ（13:00以降）</span>
         </div>
 
         <div class="menu-card">
@@ -421,9 +427,9 @@
             <img src="images/IMG_9613-scaled.jpg" alt="フルーツのワッフル - 旬のフルーツとバニラアイス・メープルシロップ ¥1,300" class="menu-img" loading="lazy" decoding="async" />
           </div>
           <div class="menu-info">
-            <h3>フルーツのワッフル</h3>
+            <h3 data-i18n="waffle.name">フルーツのワッフル</h3>
             <p class="menu-sub">Fruit Waffle</p>
-            <p class="menu-desc">サクッと焼いたワッフルに旬のフルーツ・バニラアイス・ジャムとメープルシロップをたっぷりと。</p>
+            <p class="menu-desc" data-i18n="waffle.desc">サクッと焼いたワッフルに旬のフルーツ・バニラアイス・ジャムとメープルシロップをたっぷりと。</p>
             <p class="menu-price">¥1,300</p>
           </div>
         </div>
@@ -433,10 +439,10 @@
             <img src="images/IMG_9616-scaled.jpg" alt="美里町コムシロン☆カフェの手作りケーキ - ガトーショコラ・チーズケーキ・ティラミス等の日替わりスイーツ 各¥600" class="menu-img" loading="lazy" decoding="async" />
           </div>
           <div class="menu-info">
-            <h3>手作りケーキ</h3>
+            <h3 data-i18n="cake.name">手作りケーキ</h3>
             <p class="menu-sub">Handmade Cake</p>
-            <p class="menu-desc">ガトーショコラ・ベイクドチーズケーキ・とろけるティラミス・林檎のタルトなど日替わりで並びます。テイクアウトも人気。</p>
-            <p class="menu-price">各 ¥600</p>
+            <p class="menu-desc" data-i18n="cake.desc">ガトーショコラ・ベイクドチーズケーキ・とろけるティラミス・林檎のタルトなど日替わりで並びます。テイクアウトも人気。</p>
+            <p class="menu-price" data-i18n="cake.price">各 ¥600</p>
           </div>
         </div>
 
@@ -458,7 +464,7 @@
             <div class="mf-group">
               <div class="mf-group-head">
                 <span class="mf-en">Pasta</span>
-                <span class="mf-jp">パスタ</span>
+                <span class="mf-jp" data-i18n="fullcat.pasta">パスタ</span>
               </div>
               <ul class="mf-list">
                 <li><span class="mf-name">コムシロンパスタ<span class="mf-sub">豆腐のもろみ漬けソース・柚子胡椒 ／ 看板メニュー</span></span><span class="mf-price">¥1,350</span></li>
@@ -481,7 +487,7 @@
             <div class="mf-group">
               <div class="mf-group-head">
                 <span class="mf-en">Risotto &amp; Set</span>
-                <span class="mf-jp">リゾット・おすすめセット</span>
+                <span class="mf-jp" data-i18n="fullcat.risotto">リゾット・おすすめセット</span>
               </div>
               <ul class="mf-list">
                 <li><span class="mf-name">ベーコンとキノコ色々のクリームリゾット</span><span class="mf-price">¥1,500</span></li>
@@ -492,7 +498,7 @@
             <div class="mf-group">
               <div class="mf-group-head">
                 <span class="mf-en">Oneplate Rice</span>
-                <span class="mf-jp">ワンプレートごはん（ドリンク付）</span>
+                <span class="mf-jp" data-i18n="fullcat.rice">ワンプレートごはん（ドリンク付）</span>
               </div>
               <ul class="mf-list">
                 <li><span class="mf-name">チキン南蛮プレート</span><span class="mf-price">¥1,600</span></li>
@@ -504,7 +510,7 @@
             <div class="mf-group">
               <div class="mf-group-head">
                 <span class="mf-en">Coffee &amp; Drinks</span>
-                <span class="mf-jp">コーヒー・ドリンク</span>
+                <span class="mf-jp" data-i18n="fullcat.coffee">コーヒー・ドリンク</span>
               </div>
               <ul class="mf-list">
                 <li><span class="mf-name">ブレンド / アメリカン / アイスコーヒー</span><span class="mf-price">¥600</span></li>
@@ -524,7 +530,7 @@
             <div class="mf-group">
               <div class="mf-group-head">
                 <span class="mf-en">Pizza</span>
-                <span class="mf-jp">ピザ（18cm）</span>
+                <span class="mf-jp" data-i18n="fullcat.pizza">ピザ（18cm）</span>
               </div>
               <ul class="mf-list">
                 <li><span class="mf-name">ピザマルゲリータ</span><span class="mf-price">¥1,400</span></li>
@@ -537,7 +543,7 @@
             <div class="mf-group">
               <div class="mf-group-head">
                 <span class="mf-en">Salad</span>
-                <span class="mf-jp">大きめサラダ</span>
+                <span class="mf-jp" data-i18n="fullcat.salad">大きめサラダ</span>
               </div>
               <ul class="mf-list">
                 <li><span class="mf-name">ツナと季節の野菜サラダ</span><span class="mf-price">¥1,050</span></li>
@@ -548,7 +554,7 @@
             <div class="mf-group">
               <div class="mf-group-head">
                 <span class="mf-en">Sweets</span>
-                <span class="mf-jp">スイーツ（13:00以降）</span>
+                <span class="mf-jp" data-i18n="fullcat.sweets">スイーツ（13:00以降）</span>
               </div>
               <ul class="mf-list">
                 <li><span class="mf-name">フルーツのワッフル</span><span class="mf-price">¥1,300</span></li>
@@ -561,7 +567,7 @@
             <div class="mf-group">
               <div class="mf-group-head">
                 <span class="mf-en">Side &amp; Kids</span>
-                <span class="mf-jp">サイドメニュー・キッズ</span>
+                <span class="mf-jp" data-i18n="fullcat.side">サイドメニュー・キッズ</span>
               </div>
               <ul class="mf-list">
                 <li><span class="mf-name">ガーリックトースト（3枚）</span><span class="mf-price">¥540</span></li>
@@ -574,7 +580,7 @@
             <div class="mf-group">
               <div class="mf-group-head">
                 <span class="mf-en">Alcohol &amp; Snacks</span>
-                <span class="mf-jp">アルコール・おつまみ（夜のみ）</span>
+                <span class="mf-jp" data-i18n="fullcat.alcohol">アルコール・おつまみ（夜のみ）</span>
               </div>
               <ul class="mf-list">
                 <li><span class="mf-name">スモークサーモン</span><span class="mf-price">¥1,200</span></li>
@@ -598,7 +604,7 @@
       </div>
       <!-- ===== /全メニュー一覧 ===== -->
 
-      <p class="menu-note">※価格は税込です。季節によりメニューが変わる場合があります。</p>
+      <p class="menu-note" data-i18n="menu.note">※価格は税込です。季節によりメニューが変わる場合があります。</p>
     </div>
   </section>
 
@@ -606,22 +612,22 @@
   <section class="section voice">
     <div class="container">
       <div class="section-label">VOICE</div>
-      <h2 class="section-title">お客様の声</h2>
+      <h2 class="section-title" data-i18n="voice.title">お客様の声</h2>
       <div class="voice-grid">
         <div class="voice-card">
           <p class="voice-stars">★★★★★</p>
-          <p class="voice-text">「お店も料理もお洒落で、まるでイタリアにいるみたい。コムシロンパスタは他では食べられない味で、また絶対来ます！」</p>
-          <p class="voice-author">— 30代・女性</p>
+          <p class="voice-text" data-i18n="voice1.text">「お店も料理もお洒落で、まるでイタリアにいるみたい。コムシロンパスタは他では食べられない味で、また絶対来ます！」</p>
+          <p class="voice-author" data-i18n="voice1.author">— 30代・女性</p>
         </div>
         <div class="voice-card">
           <p class="voice-stars">★★★★★</p>
-          <p class="voice-text">「テラス席で里山の景色を眺めながら食べるパスタは最高。スタッフさんも温かくて、ランチに通い続けています。」</p>
-          <p class="voice-author">— 40代・女性</p>
+          <p class="voice-text" data-i18n="voice2.text">「テラス席で里山の景色を眺めながら食べるパスタは最高。スタッフさんも温かくて、ランチに通い続けています。」</p>
+          <p class="voice-author" data-i18n="voice2.author">— 40代・女性</p>
         </div>
         <div class="voice-card">
           <p class="voice-stars">★★★★☆</p>
-          <p class="voice-text">「手作りのキャラメルチーズケーキをテイクアウトしたら家族に大好評！スイーツ目当てでもまた行きたいお店です。」</p>
-          <p class="voice-author">— 20代・女性</p>
+          <p class="voice-text" data-i18n="voice3.text">「手作りのキャラメルチーズケーキをテイクアウトしたら家族に大好評！スイーツ目当てでもまた行きたいお店です。」</p>
+          <p class="voice-author" data-i18n="voice3.author">— 20代・女性</p>
         </div>
       </div>
     </div>
@@ -655,7 +661,7 @@
       <div class="instagram-link">
         <a href="https://www.instagram.com/komushiron.cafe/" target="_blank" rel="noopener" class="btn-instagram">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          Instagram でもっと見る
+          <span data-i18n="gallery.instagram">Instagram でもっと見る</span>
         </a>
       </div>
     </div>
@@ -665,60 +671,60 @@
   <section id="access" class="section access">
     <div class="container">
       <div class="section-label">ACCESS</div>
-      <h2 class="section-title">店舗情報・アクセス</h2>
+      <h2 class="section-title" data-i18n="access.title">店舗情報・アクセス</h2>
       <div class="access-body">
         <div class="access-info">
           <dl class="info-list">
             <div class="info-row">
-              <dt>店名</dt>
-              <dd>KOMUSHIRON☆CAFE（コムシロン カフェ）</dd>
+              <dt data-i18n="access.name.label">店名</dt>
+              <dd data-i18n="access.name.val">KOMUSHIRON☆CAFE（コムシロン カフェ）</dd>
             </div>
             <div class="info-row">
-              <dt>住所</dt>
-              <dd>熊本県下益城郡美里町小筵927</dd>
+              <dt data-i18n="access.addr.label">住所</dt>
+              <dd data-i18n="access.addr.val">熊本県下益城郡美里町小筵927</dd>
             </div>
             <div class="info-row">
-              <dt>電話</dt>
+              <dt data-i18n="access.tel.label">電話</dt>
               <dd><a href="tel:0964-46-3665">0964-46-3665</a></dd>
             </div>
             <div class="info-row">
-              <dt>営業時間</dt>
+              <dt data-i18n="access.hours.label">営業時間</dt>
               <dd>
                 <table class="hours-table">
                   <tr>
-                    <th>月・水</th>
-                    <td>11:00 〜 14:30（L.O.）</td>
+                    <th data-i18n="hours.monwed">月・水</th>
+                    <td data-i18n="hours.monwed.val">11:00 〜 14:30（L.O.）</td>
                   </tr>
                   <tr>
-                    <th>木・金</th>
-                    <td>11:00 〜 14:30（L.O.）/ 18:00 〜 20:00（L.O.）</td>
+                    <th data-i18n="hours.thufri">木・金</th>
+                    <td data-i18n="hours.thufri.val">11:00 〜 14:30（L.O.）/ 18:00 〜 20:00（L.O.）</td>
                   </tr>
                   <tr>
-                    <th>土・日・祝</th>
-                    <td>11:00 〜 14:30（L.O.）/ 17:30 〜 20:00（L.O.）</td>
+                    <th data-i18n="hours.wknd">土・日・祝</th>
+                    <td data-i18n="hours.wknd.val">11:00 〜 14:30（L.O.）/ 17:30 〜 20:00（L.O.）</td>
                   </tr>
                 </table>
               </dd>
             </div>
             <div class="info-row">
-              <dt>定休日</dt>
-              <dd>火曜日</dd>
+              <dt data-i18n="access.closed.label">定休日</dt>
+              <dd data-i18n="access.closed.val">火曜日</dd>
             </div>
             <div class="info-row">
-              <dt>席数</dt>
-              <dd>24席（カウンター6席含む）</dd>
+              <dt data-i18n="access.seats.label">席数</dt>
+              <dd data-i18n="access.seats.val">24席（カウンター6席含む）</dd>
             </div>
             <div class="info-row">
-              <dt>駐車場</dt>
-              <dd>あり（約10台）</dd>
+              <dt data-i18n="access.park.label">駐車場</dt>
+              <dd data-i18n="access.park.val">あり（約10台）</dd>
             </div>
             <div class="info-row">
-              <dt>お支払い</dt>
-              <dd>現金・PayPay</dd>
+              <dt data-i18n="access.pay.label">お支払い</dt>
+              <dd data-i18n="access.pay.val">現金・PayPay</dd>
             </div>
             <div class="info-row">
-              <dt>アクセス</dt>
-              <dd>
+              <dt data-i18n="access.dir.label">アクセス</dt>
+              <dd data-i18n="access.dir.val">
                 九州道 御船ICまたは松橋ICから車で約25分。<br />
                 二俣橋・佐俣の湯・日本一の石段（3,333段）など、<br />
                 美里町の観光スポットからもお立ち寄りいただけます。
@@ -750,7 +756,7 @@
         <span class="footer-star">☆</span>
         <span>CAFE</span>
       </div>
-      <p class="footer-address">〒861-4411 熊本県下益城郡美里町小筵927／TEL 0964-46-3665</p>
+      <p class="footer-address" data-i18n="footer.address">〒861-4411 熊本県下益城郡美里町小筵927／TEL 0964-46-3665</p>
       <div class="footer-sns">
         <a href="https://www.instagram.com/komushiron.cafe/" target="_blank" rel="noopener" aria-label="Instagram">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -760,6 +766,7 @@
     </div>
   </footer>
 
+  <script src="i18n.js?v=20260508"></script>
   <script src="script.js?v=20260508"></script>
 </body>
 </html>
