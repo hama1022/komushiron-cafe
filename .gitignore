@@ -2,6 +2,9 @@
 .claude/
 serve.py
 
+# 画像のバックアップ
+*.backup
+
 # 内部資料（公開サイトに含めない）
 komushironcafe_seo_guide.md
 presentation.html
